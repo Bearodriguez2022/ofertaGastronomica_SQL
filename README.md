@@ -1,12 +1,14 @@
 # ofertaGastronomica_SQL
 Extracción datos: https://data.buenosaires.gob.ar/dataset/oferta-establecimientos-gastronomicos ,
 
+
 1_conectar los datos a sql con pyton 
 Creación Base de datos desde visual studio con python.
+Realizar queries en MySQL
    
 
 
-Diccionario de Datos:
+# Diccionario de Datos:
 idlocales: identificación de los locales creado por mi.
 nombre: de los locales de gastronomía.
 cocina: CUBANA', nan, 'TRADICIONAL', 'MINUTAS', 'PARRILLA', 'FUSION',
