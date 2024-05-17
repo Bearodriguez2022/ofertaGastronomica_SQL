@@ -1,19 +1,29 @@
 # OfertaGastronomica_SQL
-Extracción datos: https://data.buenosaires.gob.ar/dataset/oferta-establecimientos-gastronomicos ,
 
 
-1_conectar los datos a sql con pyton 
+* 1-conectar los datos a sql con pyton 
 
 Creación Base de datos desde visual studio con python.
 
 Realizar queries en MySQL
    
+Bajar el CSV de Oferta Gastronómica desde Buenos Aires Data (https://data.buenosaires.gob.ar/dataset/). Idealmente hacer esto con Python.
+
+
+
+* 2-Cree una tabla con los siguientes campos: id_local, nombre, categoria, direccion, barrio, comuna, para posteriormente poblarla con los datos bajados, utilizando el conector desde el script de Python.
+
+
+
+* 3-A partir de tener los datos disponibles, responda a las siguientes preguntas: a) ¿Cuál es el barrio con mayor cantidad de Pubs? b) Obtener la cantidad de locales por categoría c) Obtener la cantidad de restaurantes por comuna
+
+Fuente: https://data.buenosaires.gob.ar/dataset/oferta-establecimientos-gastronomicos 
 
 
 # Diccionario de Datos:
 idlocales: identificación de los locales creado por mi.
 nombre: de los locales de gastronomía.
-cocina: CUBANA', nan, 'TRADICIONAL', 'MINUTAS', 'PARRILLA', 'FUSION',
+cocina: comidas regionales: 'CUBANA',  'TRADICIONAL', 'MINUTAS', 'PARRILLA', 'FUSION',
        'MEDITERRANEA', 'PORTEÃ‘A', 'DE AUTOR', 'PIZZERIA', 'ALEMANA',
        'INTERNACIONAL', 'SANDWICHERIA', 'PATAGONICA', 'ESPAÃ‘OLA',
        'FAST FOOD', 'NATURISTA', 'ARABE', 'ARMENIA', 'REGIONAL',
@@ -25,7 +35,7 @@ cocina: CUBANA', nan, 'TRADICIONAL', 'MINUTAS', 'PARRILLA', 'FUSION',
        'MODERNO', 'PANQUEQUERÃ�A', 'CENTROEUROPEA', 'RUSTICA', 'SUSHI',
        'AFRODISIACA', 'URUGUAYA'. type: obj
 
-ambientacion:'MODERNO', nan, 'CLASICO PORTEÑO', 'RUSTICA', 'CINE', 'ALEMANA',
+ambientacion: tipo de ambientación:'MODERNO', nan, 'CLASICO PORTEÑO', 'RUSTICA', 'CINE', 'ALEMANA',
        'BOHEMIO', 'ANTIGUO', 'ESPAÑOL', 'ELEGANTE', 'ARABE', 'ARMENIA',
        'BRITANICA', 'ITALIANA', 'ORIENTAL', 'AMERICANO', 'FRANCES',
        'MARINA', 'ART- DECO', 'DISEÑO', 'TANGO', 'ESPEJOS', 'FOLKLORICO',
@@ -38,7 +48,7 @@ ambientacion:'MODERNO', nan, 'CLASICO PORTEÑO', 'RUSTICA', 'CINE', 'ALEMANA',
        'VANGUARDISTA', 'GITANA', 'MUSICAL', 'TRADICIONAL - BARRIO',
       dtype=object       
 
-barrio: ['Puerto Madero', 'San Cristobal', 'Belgrano', 'Villa Lugano',
+barrio: localización del local gastronómico:'Puerto Madero', 'San Cristobal', 'Belgrano', 'Villa Lugano',
        'Palermo', 'San Nicolas', 'Villa Crespo', 'Recoleta', 'Retiro',
        'San Telmo', 'Flores', 'Monserrat', 'Villa Urquiza', 'Balvanera',
        'Versalles', 'Boca', 'Constitucion', 'Almagro', 'Velez Sarsfield',
