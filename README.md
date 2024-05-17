@@ -60,3 +60,13 @@ barrio: localización del local gastronómico:'Puerto Madero', 'San Cristobal', 
        'Villa Gral. Mitre', 'Villa Riachuelo', 'Villa Luro', 'Coghlan',
        'Parque Chacabuco', 'Paternal', 'Agronomia', 'Villa Soldati'],
       dtype=object      
+
+Data columns (total 5 columns):
+ #   Column              Non-Null Count  Dtype 
+---  ------              --------------  ----- 
+ 0   nombre              2823 non-null   object
+ 1   categoria           2707 non-null   object
+ 2   direccion_completa  2822 non-null   object
+ 3   barrio              2823 non-null   object
+ 4   comuna              2823 non-null   object
+dtypes: object(5)
